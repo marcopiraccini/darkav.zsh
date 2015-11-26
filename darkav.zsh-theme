@@ -11,7 +11,7 @@ rbenv_version() {
 # ZSH_PROMPT_BASE_COLOR="%{$fg[blue]%}"
 
 PROMPT='
-%{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%} $(git_prompt_info)$(svn_prompt_info)
+%{$fg[cyan]%}%n%{$reset_color%}@%{$fg[yellow]%}%M:%{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%} $(git_prompt_info)$(svn_prompt_info)
 ⇒ '
 
 # Must use Powerline font, for \uE0A0 to render.
